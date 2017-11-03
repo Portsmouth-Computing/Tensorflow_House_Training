@@ -8,7 +8,7 @@
             "kind": "build",
             "isDefault": true
         },
-        "command": "python3",
+        "command": "py",
         "type": "shell",
         "args": [
             "${file}"
