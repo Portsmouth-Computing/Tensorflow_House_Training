@@ -35,7 +35,7 @@ def request(line,path):
     print("PID for process is ",proc)
     line = line.strip()
     filename = line.split("/")[-1]
-    if ".jpg" not in filename and ".gif" not in filename:
+    if not filename.endswith((".jpg",".gif",".jpeg",".png")):
         filename = filename + ".jpg"
     fullfilename = path + "\\" + filename
     #print(path, fullfilename)
