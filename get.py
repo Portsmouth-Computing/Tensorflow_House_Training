@@ -37,7 +37,7 @@ def request(line, path):
     filename = line.split("/")[-1]
     if not filename.endswith((".jpg", ".gif", ".jpeg", ".png")):
         filename = filename + ".jpg"
-    fullfilename = path + "\\" + filename
+    fullfilename = path + '/' + filename
     #print(path, fullfilename)
     try:
         with urllib.request.urlopen(line, timeout=5) as response:
